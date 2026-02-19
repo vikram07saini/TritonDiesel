@@ -14,6 +14,28 @@ import Link from "next/link";
 
 function Page() {
   const [active, setActive] = useState(1);
+  const testimonials = [
+  {
+    image: TestimonialImage,
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .Lorem Ipsum is simply dummy text of the printing and typesetting indus try. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ",
+    name: "Cameron Williamson",
+    role: "CEO",
+  },
+  {
+    image: TestimonialImage,
+    text: "Second testimonial text here. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    name: "John Smith",
+    role: "Manager",
+  },
+  {
+    image: TestimonialImage,
+    text: "Third testimonial content. Professional service and high quality fuel supply.",
+    name: "David Johnson",
+    role: "Director",
+  },
+];
+
+
 
   return (
     <>
@@ -177,36 +199,73 @@ function Page() {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-12 px-6 py-12 md:py-16">
-        <div className="relative">
-          <Image
-            src={TestimonialImage}
-            width={350}
-            height={350}
-            alt="testimonial hero image"
-            className="object-cover"
-          />
-        </div>
+     <div className="relative">
 
-        <div className="max-w-xl text-center lg:text-left">
-          <div className="text-3xl md:text-4xl text-orange-500 mb-4">
-            <FaQuoteLeft />
+  {/* Grid Container */}
+  <div className="grid">
+
+    {testimonials.map((item, index) => (
+      <div
+        key={index}
+        className={`col-start-1 row-start-1 transition-opacity duration-500 ${
+          active === index ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+      >
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-12 px-6 py-12 md:py-16">
+
+          {/* Image */}
+          <div className="relative">
+            <Image
+              src={item.image}
+              width={350}
+              height={350}
+              alt="testimonial hero image"
+              className="object-cover"
+            />
           </div>
 
-          <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .Lorem Ipsum is simply dummy text of the printing and typesetting indus try. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-          </p>
+          {/* Text */}
+          <div className="max-w-xl text-center lg:text-left">
+            <div className="text-3xl md:text-4xl text-orange-500 mb-4">
+              <FaQuoteLeft />
+            </div>
 
-          <div className="mt-6">
-            <h1 className="font-semibold text-lg">
-              — Cameron Williamson
-            </h1>
-            <span className="text-sm text-gray-500 ml-2">
-              CEO
-            </span>
+            <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+              {item.text}
+            </p>
+
+            <div className="mt-6">
+              <h1 className="font-semibold text-lg">
+                — {item.name}
+              </h1>
+              <span className="text-sm text-gray-500 ml-2">
+                {item.role}
+              </span>
+            </div>
           </div>
+
         </div>
       </div>
+    ))}
+
+  </div>
+
+</div>
+
+      <div className="flex justify-center items-center gap-3 mt-4">
+  {testimonials.map((_, index) => (
+    <button
+      key={index}
+      onClick={() => setActive(index)}
+      className={`w-2 h-2 rounded-full transition-all duration-300 ${
+        active === index
+          ? "bg-orange-500 scale-125"
+          : "bg-gray-400 hover:bg-gray-600"
+      }`}
+    />
+  ))}
+</div>
+
 
       {/* ================= OUR MISSION ================= */}
       <div className="flex flex-col lg:flex-row justify-center items-center gap-10 px-6 md:px-20 py-16">

@@ -25,12 +25,12 @@ export const metadata = {
   ],
   authors: [{ name: "Triton Diesel" }],
   creator: "Triton Diesel",
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://triton-diesel.vercel.app/"),
 
   openGraph: {
     title: "Triton Diesel | Fuel Trading Company",
     description: "Premium diesel fuel supply solutions worldwide.",
-    url: "https://yourdomain.com",
+    url: "https://triton-diesel.vercel.app/",
     siteName: "Triton Diesel",
     images: [
       {
