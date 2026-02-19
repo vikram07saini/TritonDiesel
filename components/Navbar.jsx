@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
@@ -116,9 +115,10 @@ function Navbar() {
                 </Link>
               </li>
 
-              <button className="bg-[#00A651] rounded-lg text-sm text-white p-2">
-                FIND OUR LOCATIONS
-              </button>
+              <button className="bg-[#00A651] text-white px-6 py-2.5 rounded-full text-sm  tracking-wide cursor-pointer">
+  FIND OUR LOCATIONS
+</button>
+ 
             </ul>
           </div>
         </div>

@@ -19,7 +19,7 @@ export const metadata = {
     title: "Quality Assurance | Triton Diesel",
     description:
       "Learn about Triton Diesel's strict quality control and fuel testing standards.",
-    url: "https://yourdomain.com/quality",
+    url: "https://triton-diesel.vercel.app/QualityAssurance",
     siteName: "Triton Diesel",
     images: [
       {
@@ -46,7 +46,7 @@ function page() {
             provider: {
               "@type": "Organization",
               name: "Triton Diesel Fuel Trading FZ-LLC",
-              url: "https://yourdomain.com",
+              url: "https://triton-diesel.vercel.app/",
             },
             areaServed: {
               "@type": "Country",
@@ -58,13 +58,13 @@ function page() {
         }}
       />
 
-      <div className="relative">
+      <div className="relative w-full h-[650px]">
         <Image
           src={img1}
-          width={100}
-          height={100}
-          alt=""
-          className=" w-full h-full"
+           fill
+          priority
+          alt="image"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-black/50"></div>
         <Image
@@ -74,7 +74,7 @@ function page() {
           alt=""
           className="absolute h-full top-0 right-0 w-100"
         />
-        <div className="absolute bottom-40 left-75">
+        <div className="absolute bottom-60 left-75">
           <h3 className="text-5xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
             QUALITY
             <br />
@@ -89,14 +89,14 @@ function page() {
         </div>
       </div>
       <div className="">
-        <div className="flex justify-center gap-30 mt-20 items-center">
+        <div className="flex justify-center gap-10 mt-20 items-center">
           <h1 className="text-3xl font-semibold">
             Fueling Excellence
             <br /> with Uncomp <br /> romising Quality <br />
             Assurance.
           </h1>
           <div>
-            <h1 className="text-gray-600">
+            <h1 className="text-gray-600 ml-10">
               Lorem Ipsum is simply dummy text of the printing
               <br /> and typesetting industry. Lorem Ipsum has been
               <br /> the industry's. Lorem Ipsum is simply dummy text <br />
@@ -114,25 +114,25 @@ function page() {
             </h1>
           </div>
         </div>
-        <div className="flex justify-center gap-25 mt-5 items-center pb-20">
+        <div className="flex justify-center gap-5 mt-5 items-center pb-20">
           <div className="relative">
             <Image
               src={img2}
               width={100}
               height={100}
               alt="Fueling Excellence Image"
-              className="w-80 h-80"
+              className="w-90 h-80"
             />
             <Image
               src={Rectangle}
               width={100}
               height={100}
               alt=""
-              className="absolute  top-3 h-74 w-35 right-0 "
+              className="absolute  top-0  h-80 w-35 right-0 "
             />
           </div>
-          <div className="flex flex-col gap-20 ">
-            <div className="border-1 border-gray-300 p-5 ">
+          <div className="flex flex-col gap-10 ">
+            <div className="border-1 border-gray-300 p-3 ">
               <div>
                 <h1 className="text-2xl mb-3">Adherence to Standards</h1>
                 <p className="text-gray-600">
@@ -142,7 +142,7 @@ function page() {
                 </p>
               </div>
             </div>
-            <div className="border-1 border-gray-300 p-5 ">
+            <div className="border-1 border-gray-300 p-3 ">
               <div>
                 <h1 className="text-2xl mb-3">Material Safety Data Sheets </h1>
                 <p className="text-gray-600">
@@ -153,8 +153,8 @@ function page() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-20">
-            <div className="border-1 border-gray-300 p-5">
+          <div className="flex flex-col gap-10">
+            <div className="border-1 border-gray-300 p-3">
               <div>
                 <h1 className="text-2xl mb-3">Supplier Selection</h1>
                 <p className="text-gray-600">
@@ -164,7 +164,7 @@ function page() {
                 </p>
               </div>
             </div>
-            <div className="border-1 border-gray-300 p-5 ">
+            <div className="border-1 border-gray-300 p-3 ">
               <div>
                 <h1 className="text-2xl mb-3">Continuous Improvement</h1>
                 <p className="text-gray-600">

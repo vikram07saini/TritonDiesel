@@ -17,13 +17,13 @@ export const metadata = {
 function page() {
   return (
     <div>
-      <div className="relative">
+      <div className="relative w-full h-[650px]">
         <Image
           src={MaskImage}
-          width={100}
-          height={100}
-          alt=""
-          className="h-full w-full"
+          alt="image"
+          fill
+          priority
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-black/50"></div>
         <Image
@@ -33,7 +33,7 @@ function page() {
           alt=""
           className="absolute h-full top-0 right-0 w-100"
         />
-        <div className="absolute inset-0 flex items-end">
+        <div className="absolute top-50 left-25 flex items-end">
           <div className="mb-[160px] ml-[140px]">
             <h1 className="text-5xl text-white">ABOUT US</h1>
 
@@ -49,9 +49,9 @@ function page() {
             </p>
 
             <Link href="/ContactUs">
-              <button className="mt-3 text-white bg-[#00A651] rounded-2xl p-2">
-                CONTACT US
-              </button>
+                   <button className="mt-10 bg-[#00A651] text-white px-8 py-3 rounded-full  tracking-wide transition-all duration-300 hover:bg-green-700 hover:scale-105 shadow-lg">
+  CONTACT US
+</button>
             </Link>
           </div>
         </div>

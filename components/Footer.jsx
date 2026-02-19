@@ -1,8 +1,15 @@
+"use client";
 import React from "react";
 import { FaArrowUp } from "react-icons/fa";
 import Link from "next/link";
 
 function Footer() {
+    const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="bg-[#121516] text-white px-6 lg:px-20 py-12">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-60 ">
@@ -94,9 +101,12 @@ function Footer() {
           </div>
 
           <div className="mt-15">
-            <button className="text-orange-500 hover:bg-orange-600 transition text-xl">
-              <FaArrowUp />
-            </button>
+               <button
+      onClick={scrollToTop}
+      className="text-orange-500 hover:bg-orange-600 hover:text-white transition-all duration-300 text-xl p-3 rounded-full shadow-lg"
+    >
+      <FaArrowUp />
+    </button>
           </div>
         </div>
       </div>

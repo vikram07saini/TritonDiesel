@@ -17,18 +17,18 @@ function Page() {
   const [active, setActive] = useState(1);
   return (
     <>
-      <div className="relative flex">
+      <div className="relative w-full h-[650px]">
         <Image
           src={MaskImg}
-          width={100}
-          height={100}
           alt="hero-image"
-          className="w-full h-full"
+          fill
+          priority
+          className="object-cover"
         />
 
         <div className="absolute inset-0 bg-black/50"></div>
 
-        <div className="absolute inset-0 flex items-end">
+        <div className="absolute top-45 left-30 flex items-end">
           <div className="mb-[80px] ml-[120px]">
             <h1 className="text-5xl text-white">WORLDWIDE BEST</h1>
 
@@ -47,9 +47,10 @@ function Page() {
               industry's
             </h1>
             <Link href="/ContactUs">
-              <button className="mt-3 text-white bg-[#00A651] rounded-2xl p-2">
-                CONTACT US
-              </button>
+             <button className="mt-10 bg-[#00A651] text-white px-8 py-3 rounded-full  tracking-wide transition-all duration-300 hover:bg-green-700 hover:scale-105 shadow-lg">
+  CONTACT US
+</button>
+
             </Link>
           </div>
         </div>

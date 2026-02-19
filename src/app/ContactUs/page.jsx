@@ -22,7 +22,7 @@ export const metadata = {
     title: "Contact Triton Diesel | Fuel Trading Company",
     description:
       "Get in touch with Triton Diesel Fuel Trading FZ-LLC for premium fuel supply solutions.",
-    url: "https://yourdomain.com/contact",
+    url: "https://triton-diesel.vercel.app/contact",
     siteName: "Triton Diesel",
     images: [
       {
@@ -46,7 +46,7 @@ function page() {
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "Triton Diesel Fuel Trading FZ-LLC",
-            url: "https://yourdomain.com",
+            url: "https://triton-diesel.vercel.app/",
             logo: "https://yourdomain.com/logo.png",
             contactPoint: {
               "@type": "ContactPoint",
@@ -66,13 +66,13 @@ function page() {
         }}
       />
 
-      <div className="relative">
+      <div className="relative w-full h-[650px]">
         <Image
           src={img1}
-          width={100}
-          height={100}
-          alt="img"
-          className="w-full h-full"
+          fill
+          priority
+          alt="image"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-black/50"></div>
         <Image
@@ -186,7 +186,7 @@ function page() {
               className="w-full px-4 py-3 rounded-md border border-gray-300 bg-white resize-none outline-none"
             ></textarea>
 
-            <button className="w-full bg-[#00A651] text-white py-3 rounded-full font-medium">
+            <button className="w-full bg-[#00A651] text-white py-3 rounded-full font-medium cursor-pointer">
               GET IN TOUCH
             </button>
           </div>
