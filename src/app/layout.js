@@ -29,8 +29,7 @@ export const metadata = {
 
   openGraph: {
     title: "Triton Diesel | Fuel Trading Company",
-    description:
-      "Premium diesel fuel supply solutions worldwide.",
+    description: "Premium diesel fuel supply solutions worldwide.",
     url: "https://yourdomain.com",
     siteName: "Triton Diesel",
     images: [
@@ -56,13 +55,10 @@ export const metadata = {
   },
 };
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${montserrat.variable} antialiased`}
-      >
+      <body className={`${montserrat.variable} antialiased`}>
         <Navbar />
         {children}
         <Footer />
