@@ -47,10 +47,9 @@ function Page() {
               industry's
             </h1>
             <Link href="/ContactUs">
-             <button className="mt-10 bg-[#00A651] text-white px-8 py-3 rounded-full  tracking-wide transition-all duration-300 hover:bg-green-700 hover:scale-105 shadow-lg">
-  CONTACT US
-</button>
-
+              <button className="mt-10 bg-[#00A651] text-white px-8 py-3 rounded-full  tracking-wide transition-all duration-300 hover:bg-green-700 hover:scale-105 shadow-lg">
+                CONTACT US
+              </button>
             </Link>
           </div>
         </div>
@@ -102,7 +101,7 @@ function Page() {
               printing and typesetting industry.
             </p>
 
-            <button className="mt-6 bg-[#00A651] hover:bg-green-600 transition-all duration-300 px-4 py-2 rounded-full text-white font-medium">
+            <button className="mt-10 bg-[#00A651] text-white px-8 py-3 rounded-full  tracking-wide transition-all duration-300 hover:bg-green-700 hover:scale-105 shadow-lg">
               MORE DETAILS
             </button>
           </div>
