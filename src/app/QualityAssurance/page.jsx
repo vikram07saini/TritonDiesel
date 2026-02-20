@@ -33,7 +33,7 @@ function page() {
         />
 
         <div className="absolute inset-0 flex items-center md:block px-6 md:px-0">
-          <div className="md:absolute md:bottom-60 md:left-75 text-center md:text-left max-w-xl">
+          <div className="md:absolute md:bottom-60 md:left-70 text-center md:text-left max-w-xl">
             <h3 className="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
               QUALITY
               <br />

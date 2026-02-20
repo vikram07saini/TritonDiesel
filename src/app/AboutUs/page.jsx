@@ -283,7 +283,7 @@ function page() {
         />
 
         <div className="absolute inset-0 flex items-center md:items-end px-6 md:px-0">
-          <div className="mb-0 md:mb-[160px] md:ml-[140px] text-center md:text-left max-w-xl">
+          <div className="mb-0 md:mb-[160px] md:ml-[270px] text-center md:text-left max-w-xl">
             <h1 className="text-3xl md:text-5xl text-white">ABOUT US</h1>
 
             <h3 className="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">

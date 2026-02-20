@@ -37,7 +37,7 @@ function page() {
         />
 
         <div className="absolute inset-0 flex items-center px-6 md:px-0">
-          <div className="md:ml-[140px] text-center md:text-left max-w-xl">
+          <div className="md:ml-[280px] text-center md:text-left max-w-xl">
             <h1 className="text-3xl md:text-5xl text-white">
               CONTACT US
             </h1>
@@ -124,7 +124,7 @@ function page() {
         </div>
         <div className="w-full lg:w-[560px] h-auto lg:h-[600px] bg-[#f2f2f2] border border-gray-300 flex flex-col">
           
-          <div className="text-center py-6 border-b border-gray-300">
+          <div className="text-center py-6 border-b border-gray-300 bg-white">
             <h1 className="text-base md:text-lg font-medium text-gray-700">
               Fill the form below
             </h1>
