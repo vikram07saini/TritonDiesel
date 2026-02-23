@@ -5,11 +5,23 @@ import Link from "next/link";
 
 function Footer() {
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+  const start = window.scrollY;
+  const duration = 1200; 
+  const startTime = performance.now();
+
+  const animateScroll = (currentTime) => {
+    const timeElapsed = currentTime - startTime;
+    const progress = Math.min(timeElapsed / duration, 1);
+
+    window.scrollTo(0, start * (1 - progress));
+
+    if (progress < 1) {
+      requestAnimationFrame(animateScroll);
+    }
   };
+
+  requestAnimationFrame(animateScroll);
+};
 
   return (
     <div className="bg-[#121516] text-white px-6 sm:px-10 lg:px-20 py-12">

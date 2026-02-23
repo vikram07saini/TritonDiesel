@@ -57,13 +57,14 @@ function Page() {
   return (
     <>
       <div className="relative w-full h-[550px] md:h-[650px]">
-        <Image
-          src={MaskImg}
-          alt="hero-image"
-          fill
-          priority
-          className="object-cover"
-        />
+      <Image
+  src={MaskImg}
+  alt="hero-image"
+  fill
+  priority
+  sizes="100vw"
+  className="object-cover"
+/>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="absolute inset-0 flex items-center md:items-end px-6 md:px-0">
           <div className="mb-0 md:mb-[80px] md:ml-[280px]  text-center md:text-left max-w-xl">
@@ -91,6 +92,7 @@ function Page() {
         <Image
           src={heroimg1}
           alt="hero-image"
+          priority
           className="hidden md:block absolute right-0 h-full w-60 lg:w-110 z-10 object-cover"
         />
       </div>

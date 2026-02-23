@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
       <body className={`${montserrat.className} antialiased`}>
         <Navbar />
         {children}
-        <Footer />
+       <Footer/>
       </body>
     </html>
   );

@@ -50,6 +50,7 @@ function Navbar() {
               alt="logo"
               width={150}
               height={150}
+              priority
               className="object-contain pl-5"
             />
           </Link>
