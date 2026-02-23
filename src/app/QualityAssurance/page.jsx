@@ -83,6 +83,7 @@ function page() {
               src={img2}
               width={100}
               height={100}
+              priority
               alt="Fueling Excellence Image"
               className="w-64 sm:w-80 md:w-90 h-auto md:h-80"
             />

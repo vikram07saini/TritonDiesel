@@ -66,6 +66,7 @@ function page() {
               src={img2}
               width={300}
               height={400}
+              priority
               alt="image"
               className="w-64 sm:w-80 md:w-[400px] h-auto md:h-[500px] object-cover"
             />
