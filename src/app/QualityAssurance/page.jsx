@@ -14,13 +14,7 @@ function page() {
   return (
     <div>
       <div className="relative w-full h-[550px] md:h-[650px]">
-        <Image
-          src={img1}
-          fill
-          priority
-          alt="image"
-          className="object-cover"
-        />
+        <Image src={img1} fill priority alt="image" className="object-cover" />
 
         <div className="absolute inset-0 bg-black/50"></div>
 
@@ -52,7 +46,6 @@ function page() {
       </div>
       <div className="px-6 md:px-0">
         <div className="flex flex-col md:flex-row justify-center gap-10 md:gap-10 mt-16 md:mt-20 items-center text-center md:text-left">
-          
           <h1 className="text-2xl md:text-3xl font-semibold">
             Fueling Excellence
             <br /> with Uncomp <br /> romising Quality <br />
@@ -62,24 +55,24 @@ function page() {
           <div>
             <h1 className="text-gray-600 md:ml-10 text-sm md:text-base">
               Lorem Ipsum is simply dummy text of the printing
-              <br className="hidden md:block" /> and typesetting industry.
-              Lorem Ipsum has been
-              <br className="hidden md:block" /> the industry's.
-              Lorem Ipsum is simply dummy text
-              <br className="hidden md:block" /> of the printing and typesetting industry.
-              Lorem
+              <br className="hidden md:block" /> and typesetting industry. Lorem
+              Ipsum has been
+              <br className="hidden md:block" /> the industry's. Lorem Ipsum is
+              simply dummy text
+              <br className="hidden md:block" /> of the printing and typesetting
+              industry. Lorem
               <br className="hidden md:block" /> Ipsum has been the industry's .
             </h1>
           </div>
-
           <div>
             <h1 className="text-gray-600 text-sm md:text-base">
               Lorem Ipsum is simply dummy text of the
-              <br className="hidden md:block" /> printing and typesetting industry.
-              Lorem Ipsum
-              <br className="hidden md:block" /> has been the industry's.
-              Lorem Ipsum is simply
-              <br className="hidden md:block" /> dummy text of the printing and typesetting
+              <br className="hidden md:block" /> printing and typesetting
+              industry. Lorem Ipsum
+              <br className="hidden md:block" /> has been the industry's. Lorem
+              Ipsum is simply
+              <br className="hidden md:block" /> dummy text of the printing and
+              typesetting
               <br className="hidden md:block" /> industry.
             </h1>
           </div>
@@ -103,7 +96,6 @@ function page() {
             />
           </div>
           <div className="flex flex-col gap-6 md:gap-10 w-full md:w-auto">
-            
             <div className="border border-gray-300 p-4">
               <h1 className="text-xl md:text-2xl mb-3">
                 Adherence to Standards
@@ -111,8 +103,7 @@ function page() {
               <p className="text-gray-600 text-sm md:text-base">
                 Lorem Ipsum is simply dummy text of the
                 <br className="hidden md:block" />
-                printing and typesetting industry.
-                Lorem Ipsum
+                printing and typesetting industry. Lorem Ipsum
                 <br className="hidden md:block" />
                 has been the industry's.
               </p>
@@ -125,24 +116,19 @@ function page() {
               <p className="text-gray-600 text-sm md:text-base">
                 Lorem Ipsum is simply dummy text of the
                 <br className="hidden md:block" />
-                printing and typesetting industry.
-                Lorem Ipsum
+                printing and typesetting industry. Lorem Ipsum
                 <br className="hidden md:block" />
                 has been the industry's.
               </p>
             </div>
           </div>
           <div className="flex flex-col gap-6 md:gap-10 w-full md:w-auto">
-            
             <div className="border border-gray-300 p-4">
-              <h1 className="text-xl md:text-2xl mb-3">
-                Supplier Selection
-              </h1>
+              <h1 className="text-xl md:text-2xl mb-3">Supplier Selection</h1>
               <p className="text-gray-600 text-sm md:text-base">
                 Lorem Ipsum is simply dummy text of the
                 <br className="hidden md:block" />
-                printing and typesetting industry.
-                Lorem Ipsum
+                printing and typesetting industry. Lorem Ipsum
                 <br className="hidden md:block" />
                 has been the industry's.
               </p>
@@ -155,8 +141,7 @@ function page() {
               <p className="text-gray-600 text-sm md:text-base">
                 Lorem Ipsum is simply dummy text of the
                 <br className="hidden md:block" />
-                printing and typesetting industry.
-                Lorem Ipsum
+                printing and typesetting industry. Lorem Ipsum
                 <br className="hidden md:block" />
                 has been the industry's.
               </p>
